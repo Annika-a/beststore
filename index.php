@@ -20,18 +20,14 @@ H3 {
   font-family: arial, sans-serif;
   color: #00b33c;
 }
-</style>";
+</style>
+<link rel=\"icon\" type=\"image/png\" href=\"/img/favicon-96x96.png\" sizes=\"96x96\" />";
 
 $servername = "xxx";
 $username = "xxx";
 $password = "xxx";
 //extra db with all data to get country_names:
 $dbname = "if0_37641745_beststuffstore";
-//Country specific databases
-$dbjapanname = "if0_37641745_japan";
-$dbbrazilname = "if0_37641745_brazil"; 
-$dbswedenname = "if0_37641745_sweden"; 
-$dbusaname = "if0_37641745_usa"; 
 
 // Create connection
 $conn1 = new mysqli($servername, $username, $password, $dbname);
@@ -72,22 +68,22 @@ switch ($selectOption) {
     break;
     case 2:
         $databasename = "if0_37641745_sweden"; 
-        $message = " Database nuber:  ";
+        $message = " Database number:  ";
     break;
     case 3:
          $message = " No database ";
     break;
     case 4: 
         $databasename = "if0_37641745_brazil";
-         $message = " Database nuber:  ";
+         $message = " Database number:  ";
     break;
     case 5:
         $databasename = "if0_37641745_usa"; 
-         $message = " Database nuber:  ";
+         $message = " Database number:  ";
     break; 
     case 6:
         $databasename = "if0_37641745_japan";
-         $message = " Database nuber:  ";
+         $message = " Database number:  ";
     break; 
   default:
     //code block
