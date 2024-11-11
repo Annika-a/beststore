@@ -44,24 +44,10 @@ INSERT INTO `PRODUCT` (`product_id`, `category_id`, `warehouse_id`, `product_nam
 -- --------------------------------------------------------
 
 --
--- Rakenne taululle `PRODUCT_REVIEW`
---
-
-CREATE TABLE `PRODUCT_REVIEW` (
-  `product_review_id` int(11) NOT NULL,
-  `customer_id` int(11) NOT NULL,
-  `product_id` int(11) NOT NULL,
-  `review_text` varchar(300) DEFAULT NULL,
-  `rating` decimal(10,0) DEFAULT NULL,
-  `review_time` timestamp NOT NULL DEFAULT current_timestamp()
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
-
---
 -- Vedos taulusta `PRODUCT_REVIEW`
 --
 
 INSERT INTO `PRODUCT_REVIEW` (`product_review_id`, `customer_id`, `product_id`, `review_text`, `rating`, `review_time`) VALUES
-(4, 786, 3, 'Otimo, o melhor produto ', '5', '2024-11-03 09:32:00'),
 (16, 812, 17, 'Sutekina shohin mata konyu sa sete itadakimasu', '5', '2024-11-05 18:13:33'),
 (17, 812, 14, 'Mei e no tanjobipurezento to shite. Kanojo wa sore ga totemo kiniirimashita', '5', '2024-11-05 18:14:30');
 
